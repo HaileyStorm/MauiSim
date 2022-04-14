@@ -1,6 +1,7 @@
 ﻿namespace MauiSim;
 
 // https://docs.microsoft.com/en-us/dotnet/maui/xaml/
+// Git test
 
 public static class MauiProgram
 {
