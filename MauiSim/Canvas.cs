@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Maui.Graphics.Platform;
+//using Microsoft.Maui.Graphics.Platform;
 
 namespace MauiSim
 {
@@ -21,12 +21,12 @@ namespace MauiSim
                 canvas.StrokeColor = Colors.Red;
                 canvas.StrokeSize = 6;
 
-                byte[] x = { 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+                //byte[] x = { 0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-                Stream stream = new MemoryStream(x);
-                var img = PlatformImage.FromStream(stream);
+                //Stream stream = new MemoryStream(x);
+                //var img = PlatformImage.FromStream(stream);
 
-                canvas.DrawImage(img, 0, 0, 5, 5);
+                //canvas.DrawImage(img, 0, 0, 5, 5);
             } else
             {
                 canvas.DrawLine(0, frameCt, frameCt, 0);
