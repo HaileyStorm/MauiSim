@@ -1,0 +1,10 @@
+﻿dotnet workload install maui
+dotnet tool install -g redth.net.MAUI.check
+maui-check
+
+
+NuGet:
+Microsoft.Maui.Graphics
+Optional/Future:
+Microsoft.Maui.Graphics.Skia
+Right-click solution -> Restore NuGet packages

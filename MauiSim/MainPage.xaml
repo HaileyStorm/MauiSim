@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:drawable="clr-namespace:MauiSim"
              x:Class="MauiSim.MainPage">
+    <ContentPage.Resources>
+        <drawable:GraphicsDrawable x:Key="drawable" />
+    </ContentPage.Resources>
 
     <ScrollView>
         <VerticalStackLayout Spacing="25" Padding="30">
@@ -33,12 +37,11 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                WidthRequest="250"
-                HeightRequest="310"
-                HorizontalOptions="Center" />
+            <GraphicsView
+                Drawable="{StaticResource drawable}"
+                HeightRequest="300"
+                WidthRequest="400"
+                x:Name="test"/>
 
         </VerticalStackLayout>
     </ScrollView>

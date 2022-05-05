@@ -1,4 +1,6 @@
-﻿namespace MauiSim;
+﻿using System.Diagnostics;
+
+namespace MauiSim;
 
 public partial class MainPage : ContentPage
 {
@@ -15,6 +17,9 @@ public partial class MainPage : ContentPage
 		CounterLabel.Text = $"Current count: {count}";
 
 		SemanticScreenReader.Announce(CounterLabel.Text);
+
+		GraphicsDrawable.frameCt++;
+		test.Invalidate();
 	}
 }
 
